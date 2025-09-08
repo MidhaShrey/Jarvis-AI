@@ -12,14 +12,14 @@ $(document).ready(function () {
 
 	// Siri Configuration
 	var siriWave = new SiriWave({
-			container: document.getElementById("siri-container"),
-			width: 800,
-			height: 200,
-			style: 'ios9',
-			amplitude: "1",
-			speed: "0.30",
-			autostart: true,
-		});
+		container: document.getElementById("siri-container"),
+		width: 800,
+		height: 200,
+		style: 'ios9',
+		amplitude: "1",
+		speed: "0.30",
+		autostart: true,
+	});
 
 	// Siri Message
 	$('.siri-message').textillate({
@@ -40,6 +40,7 @@ $(document).ready(function () {
 		eel.playAssistantSound();
 		$("#Oval").attr("hidden", true);
 		$("#SiriWave").attr("hidden", false);
+		eel.takecommand()()
 	});
 });
 
